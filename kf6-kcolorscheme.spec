@@ -1,6 +1,6 @@
 %define libname %mklibname KF6ColorScheme
 %define devname %mklibname KF6ColorScheme -d
-%define git 20230802
+%define git 20230811
 
 Name: kf6-kcolorscheme
 Version: 5.240.0
