@@ -1,11 +1,15 @@
 %define libname %mklibname KF6ColorScheme
 %define devname %mklibname KF6ColorScheme -d
-%define git 20230901
+%define git 20230909
 
 Name: kf6-kcolorscheme
 Version: 5.240.0
 Release: %{?git:0.%{git}.}1
 Source0: https://invent.kde.org/frameworks/kcolorscheme/-/archive/master/kcolorscheme-master.tar.bz2#/kcolorscheme-%{git}.tar.bz2
+# This changes QPalette::Accent back to QPalette::AccentColor, git master
+# targets post-beta3 Qt 6.6.
+# Patch needs to be removed when updating to Qt 6.6-beta4 or higher.
+Patch0: kcolorscheme-qt-6.6-beta3.patch
 Summary: Classes to read and interact with KColorScheme
 URL: https://invent.kde.org/frameworks/kcolorscheme
 License: CC0-1.0 LGPL-2.0+ LGPL-2.1 LGPL-3.0
