@@ -1,6 +1,6 @@
 %define libname %mklibname KF6ColorScheme
 %define devname %mklibname KF6ColorScheme -d
-%define git 20230927
+%define git 20231005
 
 Name: kf6-kcolorscheme
 Version: 5.240.0
@@ -76,7 +76,6 @@ Classes to read and interact with KColorScheme
 %files -n %{devname}
 %{_includedir}/KF6/KColorScheme
 %{_libdir}/cmake/KF6ColorScheme
-%{_qtdir}/mkspecs/modules/qt_KColorScheme.pri
 %{_qtdir}/doc/KF6ColorScheme.*
 
 %files -n %{libname}
