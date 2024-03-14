@@ -6,7 +6,7 @@
 
 Name: kf6-kcolorscheme
 Version: 6.0.0
-Release: %{?git:0.%{git}.}1
+Release: %{?git:0.%{git}.}2
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/kcolorscheme/-/archive/master/kcolorscheme-master.tar.bz2#/kcolorscheme-%{git}.tar.bz2
 %else
