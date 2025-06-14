@@ -6,7 +6,7 @@
 #define git 20240217
 
 Name: kf6-kcolorscheme
-Version: 6.14.0
+Version: 6.15.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/kcolorscheme/-/archive/master/kcolorscheme-master.tar.bz2#/kcolorscheme-%{git}.tar.bz2
@@ -84,7 +84,6 @@ Classes to read and interact with KColorScheme
 %files -n %{devname}
 %{_includedir}/KF6/KColorScheme
 %{_libdir}/cmake/KF6ColorScheme
-%{_qtdir}/doc/KF6ColorScheme.*
 
 %files -n %{libname}
 %{_libdir}/libKF6ColorScheme.so*
